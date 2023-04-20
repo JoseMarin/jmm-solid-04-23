@@ -1,0 +1,18 @@
+Crea una aplicación que simule una tienda en línea. La aplicación debe tener una clase principal 
+llamada Product que tenga las siguientes propiedades: id, nombre, descripción, precio y stock. 
+También debe tener un método llamado getPrice() que devuelva el precio del producto.
+
+A continuación, crea dos clases hijas de Product: Book y Electronic. La clase Book debe tener 
+una propiedad adicional llamada author y la clase Electronic debe tener una propiedad 
+adicional llamada brand.
+
+Luego, implementa una clase ShoppingCart que tenga un método addProduct() que acepte cualquier
+objeto de la clase Product o cualquiera de sus subclases. El método debe agregar el producto 
+al carrito de compras.
+
+Finalmente, implementa una clase Checkout que tenga un método calculateTotal() que acepte una 
+instancia de ShoppingCart y devuelva el precio total de los productos en el carrito de compras.
+
+A medida que implementas estas clases, asegúrate de aplicar el principio Open/Closed SOLID 
+para que puedas agregar fácilmente nuevas subclases de Product en el futuro sin tener que 
+modificar el código existente.

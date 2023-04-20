@@ -1,0 +1,19 @@
+Crea una aplicación web en PHP que permita a los usuarios registrarse y luego crear y editar notas. 
+Aplica el principio SRP para asegurarte de que cada clase tenga una única responsabilidad.
+
+Pasos:
+
+1-Crea una clase "Usuario" que se encargue de manejar la autenticación y el registro de usuarios.
+
+2-Crea una clase "Nota" que se encargue de manejar la creación, edición y eliminación de notas.
+
+3-Crea una clase "Vista" que se encargue de mostrar la información al usuario, incluyendo el formulario
+de registro y el formulario de creación/edición de notas.
+
+4-Utiliza el patrón de diseño MVC (Modelo-Vista-Controlador) para separar la lógica de negocios de la
+lógica de presentación.
+
+5-Asegúrate de que cada clase tenga una única responsabilidad y no esté sobrecargada con múltiples tareas.
+
+6-Prueba tu aplicación para asegurarte de que funcione correctamente y no haya errores.
+

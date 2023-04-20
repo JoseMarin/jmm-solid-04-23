@@ -1,0 +1,38 @@
+
+
+Tarea: Desarrollar un sistema de gestión de tareas que permita agregar, actualizar y eliminar tareas, 
+así como mostrar una lista de tareas pendientes y completadas. Utilizar el principio de segregación 
+de interfaces para separar la funcionalidad de almacenamiento y la funcionalidad de recuperación de 
+datos.
+
+Para completar esta tarea, puedes seguir los siguientes pasos:
+
+1. Crea una interfaz `TaskStorage` que defina métodos para agregar, actualizar y eliminar tareas. 
+La implementación de esta interfaz debe ser capaz de almacenar las tareas en una base de datos o 
+en algún otro sistema de almacenamiento.
+
+2. Crea otra interfaz `TaskRetriever` que defina métodos para buscar y recuperar tareas. La 
+implementación de esta interfaz debe ser capaz de recuperar las tareas de la misma base de datos 
+o sistema de almacenamiento que se utiliza para el almacenamiento.
+
+3. Crea una clase `DatabaseTaskStorage` que implemente la interfaz `TaskStorage`. Esta clase debe 
+ser capaz de agregar, actualizar y eliminar tareas en la base de datos.
+
+4. Crea una clase `DatabaseTaskRetriever` que implemente la interfaz `TaskRetriever`. Esta clase 
+debe ser capaz de buscar y recuperar tareas de la base de datos.
+
+5. Crea una clase `TaskManager` que utilice ambas interfaces `TaskStorage` y `TaskRetriever`. 
+Esta clase debe tener métodos para agregar, actualizar y eliminar tareas, así como mostrar una 
+lista de tareas pendientes y completadas. Esta clase también debe aceptar instancias de `TaskStorage` 
+y `TaskRetriever` en su constructor, lo que le permitirá utilizar diferentes implementaciones de 
+almacenamiento y recuperación de datos.
+
+6. Crea un script PHP que cree instancias de `DatabaseTaskStorage`, `DatabaseTaskRetriever` y 
+`TaskManager`, y utilice esta última para agregar, actualizar y eliminar tareas, así como para 
+mostrar una lista de tareas pendientes y completadas.
+
+Con este enfoque, estarás aplicando el principio de segregación de interfaces para separar la 
+funcionalidad de almacenamiento y recuperación de datos en diferentes interfaces, lo que te 
+permitirá desarrollar un sistema más modular y fácilmente escalable. Además, al utilizar una 
+interfaz para cada funcionalidad, podrás reutilizar fácilmente los mismos métodos para diferentes 
+sistemas de almacenamiento y recuperación de datos.

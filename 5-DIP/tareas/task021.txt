@@ -1,0 +1,27 @@
+Crea una clase `Database` que se conecte a una base de datos y tenga un método `query` que reciba una consulta 
+SQL y devuelva un arreglo con los resultados. Sin embargo, esta clase debe seguir el principio DIP, dependiendo 
+solo de una interfaz que represente el servicio de base de datos.
+
+Para ello, sigue los siguientes pasos:
+
+1. Define una interfaz `DatabaseInterface` que tenga los métodos `connect` y `query`.
+
+2. Define una clase `MysqlDatabase` que implemente la interfaz `DatabaseInterface` y se conecte a una 
+base de datos MySQL. Esta clase debe tener un constructor que reciba los datos necesarios para la conexión 
+a la base de datos (por ejemplo, el host, el usuario, la contraseña y el nombre de la base de datos).
+
+3. Define una clase `PostgresDatabase` que implemente la interfaz `DatabaseInterface` y se conecte a una 
+base de datos PostgreSQL. Esta clase debe tener un constructor que reciba los datos necesarios para la 
+conexión a la base de datos.
+
+4. Define la clase `Database` que tenga un constructor que reciba un objeto que implemente la interfaz 
+`DatabaseInterface`. La clase `Database` debe tener un método `query` que use el objeto `DatabaseInterface` 
+para realizar la consulta SQL y devolver los resultados.
+
+5. Crea un script PHP que utilice la clase `Database` para realizar una consulta SQL tanto en una base 
+de datos MySQL como en una base de datos PostgreSQL.
+
+Al seguir estos pasos, habrás creado una implementación de la clase `Database` que sigue el principio 
+de inversión de dependencias, ya que depende solo de la interfaz `DatabaseInterface` y no de las 
+implementaciones concretas de las bases de datos MySQL o PostgreSQL. Esto te permitirá agregar nuevas 
+implementaciones de la interfaz `DatabaseInterface` en el futuro sin tener que modificar la clase `Database`.

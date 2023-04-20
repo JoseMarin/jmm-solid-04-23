@@ -1,0 +1,18 @@
+Aquí tienes una tarea para practicar el principio de sustitución de Liskov en PHP:
+
+1. Crea una clase abstracta llamada `Figura` que tenga un método abstracto llamado 
+`calcularArea()`.
+2. Crea tres clases que hereden de `Figura`: `Cuadrado`, `Rectangulo` y `Circulo`.
+3. Cada una de las clases hijas debe tener su propio constructor para definir los 
+parámetros necesarios para calcular el área de la figura correspondiente.
+4. Implementa el método `calcularArea()` en cada clase hija. Asegúrate de que los 
+parámetros necesarios para calcular el área se pasen a cada método de manera consistente.
+5. Crea una función llamada `imprimirArea()` que tome un objeto de la clase `Figura` 
+y muestre el área de la figura utilizando el método `calcularArea()`.
+6. Crea un objeto de cada clase hija y pásalos a `imprimirArea()`. Asegúrate de que 
+la salida sea coherente con la figura correspondiente.
+
+Para aplicar el principio de sustitución de Liskov, asegúrate de que todas las clases 
+hijas puedan ser utilizadas de manera intercambiable con la clase padre en cualquier 
+lugar donde se espere un objeto de tipo `Figura`. Asegúrate de que cada método `calcularArea()` 
+proporcione un resultado coherente para cada figura correspondiente.
